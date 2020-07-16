@@ -58,8 +58,16 @@ if ( sizeof($request_array['events']) > 0 )
 	   
 	   if($text == "ใบอนุญาตขายสุราของฉันหมดอายุวันไหน"){
 		   $reply_message = 'ฉันขอเลขที่ใบอนุญาตของคุณเพื่อทำการตรวจสอบ';
-	   }	   
+	   }   
 	    
+	   if($text == "ต้องการตรวจสอบแสตมป์"){
+		   $reply_message = 'ให้เช็ควัน เดือน ปี ที่เสียภาษี ขอบคุณครับ';
+	   } 
+	   
+	   
+	   
+	   
+	   
 	   $split_text = explode(" ", $text);
 	   //foreach ($split_text as $t){$reply_message = $t;}
 	   if (in_array("ฉันหาเลขใบอนุญาตของฉันไม่เจอ", $split_text)) { 
